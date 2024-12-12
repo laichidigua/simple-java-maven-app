@@ -5,8 +5,8 @@ pipeline {
             args '-v C:/Users/Admin/.m2:/root/.m2'
         }
     }
-    options {
-        customWorkspace('/app')
+    environment {
+        WORKSPACE = '/app'
     }
     stages {
         stage('Build') {
